@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  bot:
+    build: .
+    container_name: telegram_id_bot
+    restart: always
+    volumes:
+      - .env:/root/.env
+
